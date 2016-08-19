@@ -8,7 +8,9 @@ Predict wine quality based on the chemical properties of the wine.
 ## Data
 Wine quality dataset from [UCI website](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
 
-Focus
+Focus on the red wine only.
+
+11 chemical properties, including the concentration of sugar, citric acid, alcohol, pH etc.
 
 ## Process
 
