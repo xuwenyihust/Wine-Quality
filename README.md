@@ -12,7 +12,7 @@ Focus on the red wine only.
 
 11 chemical properties, including the concentration of sugar, citric acid, alcohol, pH etc.
 <p align="justify">
-  <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/head.JPG" width="800"/>
+  <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/head.JPG" width="1000"/>
 </p>
 
 ## Process
