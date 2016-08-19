@@ -10,7 +10,9 @@ Wine quality dataset from [UCI website](https://archive.ics.uci.edu/ml/machine-l
 
 Focus on the red wine only.
 
-11 chemical properties, including the concentration of sugar, citric acid, alcohol, pH etc.
+**11 chemical properties**, including the concentration of sugar, citric acid, alcohol, pH etc.
+
+The **wine qualities** are represented as integers scaling from **1 to 10**.
 <p align="justify">
    <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/head.JPG" width="900"/>
 </p>
