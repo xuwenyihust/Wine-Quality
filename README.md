@@ -14,6 +14,10 @@ Focus on the red wine only.
 <p align="justify">
    <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/head.JPG" width="900"/>
 </p>
+```python
+>>> print(wine.shape)
+(1599, 12)
+```
 
 ## Process
 
