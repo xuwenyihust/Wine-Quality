@@ -6,10 +6,12 @@ Coursework from [Harvard CS 109](http://nbviewer.jupyter.org/github/cs109/2014/b
 Predict wine quality based on the chemical properties of the wine.
 
 ## Data
+### Data Source
 Wine quality dataset from [UCI website](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
 
 Focus on the red wine only.
 
+### Data Preview
 **11 chemical properties**, including the concentration of sugar, citric acid, alcohol, pH etc.
 
 The **wine qualities** are represented as integers scaling from **1 to 10**.
