@@ -57,6 +57,10 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
    
 * **Probability Calibration**
     * Have the predicted labels now, also want to get the probability of the respective label
+    * Construct prediction based on probabilities
+    * Due to **class imbalance**, look for the suitable **cutoff value** rather than simply set it to 0.5
+    * Evaluate different cutoff values under different train/test splittings using **cross-validation**
+    * Choose the cutoff value to be **0.2**
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
