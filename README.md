@@ -44,9 +44,10 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 > **Construct a multitude of decision trees** at training time and output the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.
 
 ### Advantages of random forests over decision trees
+> Random decision forests correct for decision trees' habit of overfitting to their training set.
 
 ## Resources
 [Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
 [UCI wine-quality dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
 [Wikipedia Random Forests](https://en.wikipedia.org/wiki/Random_forest)
-
+[Hastie, Trevor; Tibshirani, Robert; Friedman, Jerome (2008). The Elements of Statistical Learning (2nd ed.). Springer. ISBN 0-387-95284-5.](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
