@@ -65,7 +65,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 * **Compare the Importance of Different Features**
     * The more the accuracy drops when the feature is permuted, the more "important" we can conclude the feature is
-    * Random forests Classifier provides a importance list
+    * Random forests Classifier provides a **importance list**
     ```python
     >>> clf = RandomForestClassifier(n_estimators=15)
     >>> clf.fit(X,Y)
@@ -73,6 +73,10 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     >>> print(importance_list[:10])
     [ 0.07893465  0.1145243   0.08640124  0.07171019  0.0802987   0.06206291 0.07979788  0.11030425  0.0517296   0.13133903]
     ```
+    * Use a bar chart to visualize the importance list
+    <p align="justify">
+      <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/relative_importance.png" width="500"/>
+    </p>
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
