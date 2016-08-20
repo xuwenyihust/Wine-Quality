@@ -55,6 +55,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     * Choose **F1** rather than **accuracy** to be less sensitive to imbalance
     * Use F1 to reevaluate model using different values of 'number of decision trees'
     * Set the number of decision trees to be 15
+    * Get a mean F1 score of 0.47
    
 * **Probability Calibration**
     * Have the predicted labels now, also want to get the probability of the respective label
@@ -73,7 +74,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     >>> print(importance_list[:10])
     [ 0.07893465  0.1145243   0.08640124  0.07171019  0.0802987   0.06206291 0.07979788  0.11030425  0.0517296   0.13133903]
     ```
-    * Use a bar chart to visualize the importance list
+    * Use a **bar chart** to visualize the importance list
     <p align="justify">
       <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/relative_importance.png" width="500"/>
     </p>
