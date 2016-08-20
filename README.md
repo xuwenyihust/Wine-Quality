@@ -49,6 +49,9 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     ```
     * Choose **F1** rather than **accuracy** to be less sensitive to imbalance
     * Set the number of decision trees to be 15
+   
+* **Probability Calibration**
+    * Have the predicted labels now, also want to get the probability of the respective label
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
