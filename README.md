@@ -69,6 +69,7 @@ By default, the score computed at each CV iteration is the score method of the e
 * Undersampling the majority class
 * **Oversampling the minority class**
 * Use a **asymmetric cost function** to artificially balance the training process
+
     (assign a higher misclassification penalty on the minority class)
 
 ## Resources
