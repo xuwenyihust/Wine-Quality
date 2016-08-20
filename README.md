@@ -25,6 +25,11 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 ## Process
 
+* Data Wrangling
+    * Pick out the **feature matrix X & response vector y**, transform them into Numpy arrays
+    * Convert 0~10 ratings to good(1)/bad(0) **binary classifications**. (Threshold = 7)
+* Model Construction 
+
 ## Libraries Used
 
 ## Resources
