@@ -27,9 +27,25 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 * Data Wrangling
     * Pick out the **feature matrix X & response vector y**, transform them into Numpy arrays
-    * Convert 0~10 ratings to good(1)/bad(0) **binary classifications**. (Threshold = 7)
+    * Convert 0~10 ratings to good(1)/bad(0) **binary classifications** (Threshold = 7)
+
 * Model Construction 
+    * Choose **random forests** method to do the classification
 
 ## Libraries Used
+* [pandas](http://pandas.pydata.org/)
+* [matplotlib](http://matplotlib.org/)
+* [sklearn](http://scikit-learn.org/stable/)
+* [numpy](http://www.numpy.org/)
+* [seaborn](https://stanford.edu/~mwaskom/software/seaborn/)
+
+## Appendix
+### How to construct a random forest
+
+### Advantages of random forests over decision trees
 
 ## Resources
+[Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
+[UCI wine-quality dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
+[Wikipedia Random Forests](https://en.wikipedia.org/wiki/Random_forest)
+
