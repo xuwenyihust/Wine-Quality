@@ -41,6 +41,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 ## Appendix
 ### How to construct a random forest
+> Construct a multitude of decision trees at training time and outputting the class that is the mode of the classes  (classification) or mean prediction (regression) of the individual trees.
 
 ### Advantages of random forests over decision trees
 
