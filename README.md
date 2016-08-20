@@ -5,6 +5,8 @@ Coursework from [Harvard CS 109](http://nbviewer.jupyter.org/github/cs109/2014/b
 
 Predict wine quality based on the chemical properties of the wine.
 
+A **binary classification** problem, whether the wine is good/bad.
+
 ## Data
 ### Data Source
 Wine quality dataset from [UCI website](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
