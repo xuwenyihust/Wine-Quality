@@ -57,10 +57,16 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 > Secondly, for each split in each decision tree, the random forests algorithm only considers **a random subset of variables to split on**. All trees are trained independently of each other. To make predictions, all trees are queried independently and the majority vote wins.
 
 ### How to use cross_val_score to help tune parameters
-[Cross-validation: evaluating estimator performance](http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation)
+scores = sklearn.cross_validation.cross_val_score(model, X=..., y=..., **cv=n**, ...) *(cv: short for cross-validation)*
+
+Evaluate a model by splitting the data, fitting a model and computing the score n consecutive times (with different splits each time).
+
+By default, the score computed at each CV iteration is the score method of the estimator.
 
 ## Resources
 * [Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
 * [UCI wine-quality dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
 * [Wikipedia Random Forests](https://en.wikipedia.org/wiki/Random_forest)
 * [Hastie, Trevor; Tibshirani, Robert; Friedman, Jerome (2008). The Elements of Statistical Learning (2nd ed.). Springer. ISBN 0-387-95284-5.](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+* [Cross-validation: evaluating estimator performance](http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation)
+
