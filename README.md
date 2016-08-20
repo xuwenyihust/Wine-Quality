@@ -55,7 +55,10 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     * Choose **F1** rather than **accuracy** to be less sensitive to imbalance
     * Use F1 to reevaluate model using different values of 'number of decision trees'
     * Set the number of decision trees to be 15
-    * Get a mean F1 score of 0.47
+    * Get a **mean F1 score of 0.47**
+    <p align="justify">
+      <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/num_of_trees.png" width="500"/>
+    </p>
    
 * **Probability Calibration**
     * Have the predicted labels now, also want to get the probability of the respective label
