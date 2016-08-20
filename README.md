@@ -33,6 +33,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 * Model Construction 
     * Choose **random forests** method to do the classification
+    * Use **cross-validation** to help choose the best **'number of decision trees'** parameter
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
@@ -54,6 +55,9 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 > First, it randomly resamples the data with replacement, so each decision tree is being fit on a **slightly different set of data**. 
 
 > Secondly, for each split in each decision tree, the random forests algorithm only considers **a random subset of variables to split on**. All trees are trained independently of each other. To make predictions, all trees are queried independently and the majority vote wins.
+
+### How to use cross_val_score to help tune parameters
+[Cross-validation: evaluating estimator performance](http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation)
 
 ## Resources
 * [Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
