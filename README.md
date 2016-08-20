@@ -53,6 +53,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     Ratio of bad wine:  0.864290181363
     ```
     * Choose **F1** rather than **accuracy** to be less sensitive to imbalance
+    * Use F1 to reevaluate model using different values of 'number of decision trees'
     * Set the number of decision trees to be 15
    
 * **Probability Calibration**
