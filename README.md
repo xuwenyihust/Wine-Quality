@@ -35,7 +35,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     * Choose **random forests** method to do the classification
     * Iterate from 1 to 40 to choose the best **'number of decision trees'** parameter
     * For each value of 'number of decision trees', use **cross_val_score** to evaluate model with different train/test splittings
-    * Need to consider about the **trade-off** between **classification accuracy & computational cost of fitting additional trees** 
+    * Need to consider about the **trade-off** between **classification accuracy & cost of fitting additional trees** 
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
@@ -65,10 +65,17 @@ Evaluate a model by splitting the data, fitting a model and computing the score 
 
 By default, the score computed at each CV iteration is the score method of the estimator.
 
+### How to deal with class imbalance
+* Undersampling the majority class
+* **Oversampling the minority class**
+* Use a **asymmetric cost function** to artificially balance the training process
+    (assign a higher misclassification penalty on the minority class)
+
 ## Resources
 * [Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
 * [UCI wine-quality dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/)
 * [Wikipedia Random Forests](https://en.wikipedia.org/wiki/Random_forest)
 * [Hastie, Trevor; Tibshirani, Robert; Friedman, Jerome (2008). The Elements of Statistical Learning (2nd ed.). Springer. ISBN 0-387-95284-5.](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
 * [Cross-validation: evaluating estimator performance](http://scikit-learn.org/stable/modules/cross_validation.html#cross-validation)
+* [Class imbalance in Supervised Machine Learning](http://stats.stackexchange.com/questions/131255/class-imbalance-in-supervised-machine-learning)
 
