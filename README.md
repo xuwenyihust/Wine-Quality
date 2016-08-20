@@ -96,6 +96,8 @@ By default, the score computed at each CV iteration is the score method of the e
 * Use a **asymmetric cost function** to artificially balance the training process
 
     (assign a higher misclassification penalty on the minority class)
+* **Better performance metric**
+    * **F1 Score**
 
 ## Resources
 * [Harvard CS 109 HW5](http://nbviewer.jupyter.org/github/cs109/2014/blob/master/homework/HW5.ipynb)
