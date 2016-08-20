@@ -33,7 +33,9 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 * Model Construction 
     * Choose **random forests** method to do the classification
-    * Use **cross-validation** to help choose the best **'number of decision trees'** parameter
+    * Iterate from 1 to 40 to choose the best **'number of decision trees'** parameter
+    * For each value of 'number of decision trees', use **cross_val_score** to evaluate model with different train/test splittings
+    * Need to consider about the **trade-off** between **classification accuracy & computational cost of fitting additional trees** 
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
