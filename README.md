@@ -25,7 +25,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 (1599, 12)
 ```
 <p align="justify">
-   <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/ratings_of_wines.png" width="900"/>
+   <img src="https://github.com/xuwenyihust/Wine-Quality/blob/master/graphs/ratings_of_wines.png" width="300"/>
 </p>
 
 ## Process
