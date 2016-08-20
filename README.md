@@ -27,18 +27,28 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 ## Process
 
-* Data Wrangling
+* **Data Wrangling**
     * Pick out the **feature matrix X & response vector y**, transform them into Numpy arrays
     * Convert 0~10 ratings to good(1)/bad(0) **binary classifications** (Threshold = 7)
 
-* Model Construction 
+* **Model Construction** 
     * Choose **random forests** method to do the classification
     * Iterate from 1 to 40 to choose the best **'number of decision trees'** parameter
     * For each value of 'number of decision trees', use **cross_val_score** to evaluate model with different train/test splittings
     * Need to consider about the **trade-off** between **classification accuracy & cost of fitting additional trees** 
 
-* Handle Class Imbalance
-    *
+* **Handle Class Imbalance**
+    * The classes are highly unbalanced
+    ```python
+    >>> good_ratio = sum(y) / len(y)
+    >>> bad_ratio = 1 - good_ratio
+    >>> print('Ratio of good wine: ', good_ratio)
+    Ratio of good wine:  0.135709818637
+    >>> print('Ratio of bad wine: ', bad_ratio)
+    Ratio of bad wine:  0.864290181363
+    ```
+    * Choose **F1** rather than **accuracy** to be less sensitive to imbalance
+    * Set the number of decision trees to be 15
 
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
