@@ -63,6 +63,17 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     * Evaluate different cutoff values under different train/test splittings using **cross-validation**
     * Choose the cutoff value to be **0.2**
 
+* **Compare the Importance of Different Features**
+    * The more the accuracy drops when the feature is permuted, the more "important" we can conclude the feature is
+    * Random forests Classifier provides a importance list
+    ```python
+    >>> clf = RandomForestClassifier(n_estimators=15)
+    >>> clf.fit(X,Y)
+    >>> importance_list = clf.feature_importances_
+    >>> print(importance_list[:10])
+    [ 0.07893465  0.1145243   0.08640124  0.07171019  0.0802987   0.06206291 0.07979788  0.11030425  0.0517296   0.13133903]
+    ```
+
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
 * [matplotlib](http://matplotlib.org/)
