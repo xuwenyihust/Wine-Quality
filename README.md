@@ -56,7 +56,7 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 
 > Secondly, for each split in each decision tree, the random forests algorithm only considers **a random subset of variables to split on**. All trees are trained independently of each other. To make predictions, all trees are queried independently and the majority vote wins.
 
-### How to use cross_val_score to help tune parameters
+### How to use cross_val_score to help evaluating models
 scores = sklearn.cross_validation.cross_val_score(model, X=..., y=..., **cv=n**, ...) *(cv: short for cross-validation)*
 
 Evaluate a model by splitting the data, fitting a model and computing the score n consecutive times (with different splits each time).
