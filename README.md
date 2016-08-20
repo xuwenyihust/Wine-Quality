@@ -37,6 +37,9 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
     * For each value of 'number of decision trees', use **cross_val_score** to evaluate model with different train/test splittings
     * Need to consider about the **trade-off** between **classification accuracy & cost of fitting additional trees** 
 
+* Handle Class Imbalance
+    *
+
 ## Libraries Used
 * [pandas](http://pandas.pydata.org/)
 * [matplotlib](http://matplotlib.org/)
@@ -45,27 +48,27 @@ The **wine qualities** are represented as integers scaling from **1 to 10**.
 * [seaborn](https://stanford.edu/~mwaskom/software/seaborn/)
 
 ## Appendix
-### How to construct a random forest
+### How to construct a random forest?
 > **Construct a multitude of decision trees** at training time and output the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.
 
-### Advantages of random forests over decision trees
+### Advantages of random forests over decision trees?
 > Random decision forests correct for decision trees' habit of **overfitting** to their training set.
 
-### Sources of randomness in the process that are used to build a diverse set of decision trees
+### Sources of randomness in the process that are used to build a diverse set of decision trees?
 > The random forest adds randomness in two ways. 
 
 > First, it randomly resamples the data with replacement, so each decision tree is being fit on a **slightly different set of data**. 
 
 > Secondly, for each split in each decision tree, the random forests algorithm only considers **a random subset of variables to split on**. All trees are trained independently of each other. To make predictions, all trees are queried independently and the majority vote wins.
 
-### How to use cross_val_score to help evaluating models
+### How to use cross_val_score to help evaluating models?
 scores = sklearn.cross_validation.cross_val_score(model, X=..., y=..., **cv=n**, ...) *(cv: short for cross-validation)*
 
 Evaluate a model by splitting the data, fitting a model and computing the score n consecutive times (with different splits each time).
 
 By default, the score computed at each CV iteration is the score method of the estimator.
 
-### How to deal with class imbalance
+### How to deal with class imbalance?
 * Undersampling the majority class
 * **Oversampling the minority class**
 * Use a **asymmetric cost function** to artificially balance the training process
